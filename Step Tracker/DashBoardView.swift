@@ -8,7 +8,7 @@
 import SwiftUI
 
 enum HealthMetricContext: CaseIterable, Identifiable {
-    // could add another case if you want to track something else like calories, or sleep 
+    // could add another case if you want to track something else like calories, or sleep
     case steps, weight
     var id: Self { self }
     
@@ -68,15 +68,15 @@ struct DashBoardView: View {
                     .background(RoundedRectangle(cornerRadius: 12).fill(Color(.secondarySystemBackground)))
                     
                     VStack(alignment: .leading) {
-                            VStack(alignment: .leading) {
-                                Label("Averages", systemImage: "calendar")
-                                    .font(.title3.bold())
-                                    .foregroundStyle(.pink)
-                                
-                                Text("Last 28 Days")
-                                    .font(.caption)
-                                    .foregroundStyle(.secondary)
-                            }
+                        VStack(alignment: .leading) {
+                            Label("Averages", systemImage: "calendar")
+                                .font(.title3.bold())
+                                .foregroundStyle(.pink)
+                            
+                            Text("Last 28 Days")
+                                .font(.caption)
+                                .foregroundStyle(.secondary)
+                        }
                         .padding(.bottom, 12)
                         
                         RoundedRectangle(cornerRadius: 12)
