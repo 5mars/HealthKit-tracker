@@ -8,7 +8,7 @@
 import SwiftUI
 
 enum HealthMetricContext: CaseIterable, Identifiable {
-    // could add another case if you want to track something else like calories, or sleep 
+    // could add another case if you want to track something else like calories, or sleep
     case steps, weight
     var id: Self { self }
     
@@ -24,7 +24,10 @@ enum HealthMetricContext: CaseIterable, Identifiable {
 
 
 struct DashBoardView: View {
-
+    
+    @Environment(HealthKitManager.self) private var hkManager
+    @AppStorage("hasSeenPermissionPriming") private var hasSeenPermissionPriming = false
+    @State private var isShowingPermissionPrimingSheet = false
     @State private var selectedStat: HealthMetricContext = .steps
     var isSteps: Bool {selectedStat == .steps}
     var body: some View {
@@ -65,15 +68,15 @@ struct DashBoardView: View {
                     .background(RoundedRectangle(cornerRadius: 12).fill(Color(.secondarySystemBackground)))
                     
                     VStack(alignment: .leading) {
-                            VStack(alignment: .leading) {
-                                Label("Averages", systemImage: "calendar")
-                                    .font(.title3.bold())
-                                    .foregroundStyle(.pink)
-                                
-                                Text("Last 28 Days")
-                                    .font(.caption)
-                                    .foregroundStyle(.secondary)
-                            }
+                        VStack(alignment: .leading) {
+                            Label("Averages", systemImage: "calendar")
+                                .font(.title3.bold())
+                                .foregroundStyle(.pink)
+                            
+                            Text("Last 28 Days")
+                                .font(.caption)
+                                .foregroundStyle(.secondary)
+                        }
                         .padding(.bottom, 12)
                         
                         RoundedRectangle(cornerRadius: 12)
@@ -85,10 +88,18 @@ struct DashBoardView: View {
                 }
             }
             .padding()
+            .task {
+                isShowingPermissionPrimingSheet = !hasSeenPermissionPriming
+            }
             .navigationTitle("Dashboard")
             .navigationDestination(for: HealthMetricContext.self) { metric in
                 HealthDataListView(metric: metric)
             }
+            .sheet(isPresented: $isShowingPermissionPrimingSheet, onDismiss: {
+                //fetch health data
+            }, content: {
+                HKPermissionPrimmingView(hasSeen: $hasSeenPermissionPriming)
+            })
         }
         .tint(isSteps ? .pink : .indigo)
     }
@@ -96,4 +107,5 @@ struct DashBoardView: View {
 
 #Preview {
     DashBoardView()
+        .environment(HealthKitManager())
 }
