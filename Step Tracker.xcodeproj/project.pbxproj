@@ -12,6 +12,7 @@
 		0D26259F2BE41D75001FA906 /* ChartDataTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D26259E2BE41D75001FA906 /* ChartDataTypes.swift */; };
 		0D2625A22BE41E11001FA906 /* Date+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2625A12BE41E11001FA906 /* Date+Ext.swift */; };
 		0D2625A52BE41FB9001FA906 /* Algorithms in Frameworks */ = {isa = PBXBuildFile; productRef = 0D2625A42BE41FB9001FA906 /* Algorithms */; };
+		0D2625A72BE424F7001FA906 /* StepPieChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2625A62BE424F7001FA906 /* StepPieChart.swift */; };
 		0D4E976E2BE14A6300189491 /* HealthDataListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4E976D2BE14A6300189491 /* HealthDataListView.swift */; };
 		0D4E97702BE1599300189491 /* HKPermissionPrimmingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4E976F2BE1599300189491 /* HKPermissionPrimmingView.swift */; };
 		0D4E97732BE162D200189491 /* HealthKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4E97722BE162D100189491 /* HealthKitManager.swift */; };
@@ -27,6 +28,7 @@
 		0D26259C2BE41D42001FA906 /* ChartMath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartMath.swift; sourceTree = "<group>"; };
 		0D26259E2BE41D75001FA906 /* ChartDataTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartDataTypes.swift; sourceTree = "<group>"; };
 		0D2625A12BE41E11001FA906 /* Date+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Ext.swift"; sourceTree = "<group>"; };
+		0D2625A62BE424F7001FA906 /* StepPieChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepPieChart.swift; sourceTree = "<group>"; };
 		0D4E976D2BE14A6300189491 /* HealthDataListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthDataListView.swift; sourceTree = "<group>"; };
 		0D4E976F2BE1599300189491 /* HKPermissionPrimmingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HKPermissionPrimmingView.swift; sourceTree = "<group>"; };
 		0D4E97712BE1610300189491 /* Step Tracker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Step Tracker.entitlements"; sourceTree = "<group>"; };
@@ -67,6 +69,7 @@
 				0D2625962BE4178C001FA906 /* StepBarChart.swift */,
 				0D26259C2BE41D42001FA906 /* ChartMath.swift */,
 				0D26259E2BE41D75001FA906 /* ChartDataTypes.swift */,
+				0D2625A62BE424F7001FA906 /* StepPieChart.swift */,
 			);
 			path = Charts;
 			sourceTree = "<group>";
@@ -220,6 +223,7 @@
 				0D26259D2BE41D42001FA906 /* ChartMath.swift in Sources */,
 				0D4E97752BE2D84D00189491 /* HealthMetric.swift in Sources */,
 				0D26259F2BE41D75001FA906 /* ChartDataTypes.swift in Sources */,
+				0D2625A72BE424F7001FA906 /* StepPieChart.swift in Sources */,
 				0D2625A22BE41E11001FA906 /* Date+Ext.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
