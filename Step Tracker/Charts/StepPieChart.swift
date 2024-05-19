@@ -72,7 +72,7 @@ struct StepPieChart: View {
         .padding()
         .background(RoundedRectangle(cornerRadius: 12).fill(Color(.secondarySystemBackground)))
         .onChange(of: rawSelectedChartValue) { oldValue, newValue in
-            print(selectedWeekday?.value)
+            
         }
     }
 }

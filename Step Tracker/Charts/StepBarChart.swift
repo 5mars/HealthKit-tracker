@@ -57,6 +57,7 @@ struct StepBarChart: View {
                                     spacing: 0,
                                     overflowResolution: .init(x: .fit(to: .chart), y: .disabled)) { annotationView }
                 }
+                
                 RuleMark(y: .value("Avegare", avgStepCount))
                     .foregroundStyle(Color.secondary)
                     .lineStyle(.init(lineWidth: 1, dash: [5]))
