@@ -21,6 +21,8 @@
 		0D5DC45A2BE0907F0027E90C /* DashBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5DC4592BE0907F0027E90C /* DashBoardView.swift */; };
 		0D5DC45C2BE090810027E90C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D5DC45B2BE090810027E90C /* Assets.xcassets */; };
 		0D5DC45F2BE090810027E90C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D5DC45E2BE090810027E90C /* Preview Assets.xcassets */; };
+		0D8DBF022BFA6DC7003142E1 /* WeightLineChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8DBF012BFA6DC7003142E1 /* WeightLineChart.swift */; };
+		0D8DBF052BFA72D9003142E1 /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8DBF042BFA72D9003142E1 /* MockData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +41,8 @@
 		0D5DC4592BE0907F0027E90C /* DashBoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashBoardView.swift; sourceTree = "<group>"; };
 		0D5DC45B2BE090810027E90C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0D5DC45E2BE090810027E90C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0D8DBF012BFA6DC7003142E1 /* WeightLineChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightLineChart.swift; sourceTree = "<group>"; };
+		0D8DBF042BFA72D9003142E1 /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +74,7 @@
 				0D26259C2BE41D42001FA906 /* ChartMath.swift */,
 				0D26259E2BE41D75001FA906 /* ChartDataTypes.swift */,
 				0D2625A62BE424F7001FA906 /* StepPieChart.swift */,
+				0D8DBF012BFA6DC7003142E1 /* WeightLineChart.swift */,
 			);
 			path = Charts;
 			sourceTree = "<group>";
@@ -117,9 +122,9 @@
 		0D5DC4562BE0907F0027E90C /* Step Tracker */ = {
 			isa = PBXGroup;
 			children = (
+				0D8DBF032BFA72B6003142E1 /* Utilities */,
 				0D4E97712BE1610300189491 /* Step Tracker.entitlements */,
 				0D5DC4572BE0907F0027E90C /* Step_TrackerApp.swift */,
-				0D2625A02BE41DF9001FA906 /* Extensions */,
 				0D2625992BE41A50001FA906 /* Charts */,
 				0D26259A2BE41A7A001FA906 /* Model */,
 				0D26259B2BE41A80001FA906 /* Manager */,
@@ -136,6 +141,15 @@
 				0D5DC45E2BE090810027E90C /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0D8DBF032BFA72B6003142E1 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				0D2625A02BE41DF9001FA906 /* Extensions */,
+				0D8DBF042BFA72D9003142E1 /* MockData.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -217,6 +231,7 @@
 				0D4E976E2BE14A6300189491 /* HealthDataListView.swift in Sources */,
 				0D5DC45A2BE0907F0027E90C /* DashBoardView.swift in Sources */,
 				0D2625972BE4178C001FA906 /* StepBarChart.swift in Sources */,
+				0D8DBF052BFA72D9003142E1 /* MockData.swift in Sources */,
 				0D5DC4582BE0907F0027E90C /* Step_TrackerApp.swift in Sources */,
 				0D4E97732BE162D200189491 /* HealthKitManager.swift in Sources */,
 				0D4E97702BE1599300189491 /* HKPermissionPrimmingView.swift in Sources */,
@@ -224,6 +239,7 @@
 				0D4E97752BE2D84D00189491 /* HealthMetric.swift in Sources */,
 				0D26259F2BE41D75001FA906 /* ChartDataTypes.swift in Sources */,
 				0D2625A72BE424F7001FA906 /* StepPieChart.swift in Sources */,
+				0D8DBF022BFA6DC7003142E1 /* WeightLineChart.swift in Sources */,
 				0D2625A22BE41E11001FA906 /* Date+Ext.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
