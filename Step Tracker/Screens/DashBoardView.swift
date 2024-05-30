@@ -52,13 +52,13 @@ struct DashBoardView: View {
                     case .weight:
                         WeightLineChart(selectedStat: selectedStat, chartData: hkManager.weightData)
                     }
-
                 }
             }
             .padding()
             .task {
                 await hkManager.fetchStepCount()
                 await hkManager.fetchWeights()
+//                await hkManager.addSimulatorData()
                 isShowingPermissionPrimingSheet = !hasSeenPermissionPriming
             }
             .navigationTitle("Dashboard")

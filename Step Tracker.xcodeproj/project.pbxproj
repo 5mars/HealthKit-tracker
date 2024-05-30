@@ -23,6 +23,7 @@
 		0D5DC45F2BE090810027E90C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D5DC45E2BE090810027E90C /* Preview Assets.xcassets */; };
 		0D8DBF022BFA6DC7003142E1 /* WeightLineChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8DBF012BFA6DC7003142E1 /* WeightLineChart.swift */; };
 		0D8DBF052BFA72D9003142E1 /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8DBF042BFA72D9003142E1 /* MockData.swift */; };
+		0DFDFCEE2C09193100D588CD /* WeightDiffChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DFDFCED2C09193100D588CD /* WeightDiffChart.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,7 @@
 		0D5DC45E2BE090810027E90C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0D8DBF012BFA6DC7003142E1 /* WeightLineChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightLineChart.swift; sourceTree = "<group>"; };
 		0D8DBF042BFA72D9003142E1 /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
+		0DFDFCED2C09193100D588CD /* WeightDiffChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightDiffChart.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +77,7 @@
 				0D26259E2BE41D75001FA906 /* ChartDataTypes.swift */,
 				0D2625A62BE424F7001FA906 /* StepPieChart.swift */,
 				0D8DBF012BFA6DC7003142E1 /* WeightLineChart.swift */,
+				0DFDFCED2C09193100D588CD /* WeightDiffChart.swift */,
 			);
 			path = Charts;
 			sourceTree = "<group>";
@@ -235,6 +238,7 @@
 				0D5DC4582BE0907F0027E90C /* Step_TrackerApp.swift in Sources */,
 				0D4E97732BE162D200189491 /* HealthKitManager.swift in Sources */,
 				0D4E97702BE1599300189491 /* HKPermissionPrimmingView.swift in Sources */,
+				0DFDFCEE2C09193100D588CD /* WeightDiffChart.swift in Sources */,
 				0D26259D2BE41D42001FA906 /* ChartMath.swift in Sources */,
 				0D4E97752BE2D84D00189491 /* HealthMetric.swift in Sources */,
 				0D26259F2BE41D75001FA906 /* ChartDataTypes.swift in Sources */,
