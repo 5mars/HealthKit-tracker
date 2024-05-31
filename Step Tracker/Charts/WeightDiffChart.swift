@@ -84,7 +84,7 @@ struct WeightDiffChart: View {
                 Text((selectedData?.value ?? 0) >= 0 ? "+" : "")
                     .fontWeight(.heavy)
                     .foregroundStyle((selectedData?.value ?? 0) >= 0 ? .indigo : .mint)
-                    .kerning(-10)
+                    .kerning(-8)
                 
                 Text(selectedData?.value ?? 0, format: .number.precision(.fractionLength(2)))
                     .fontWeight(.heavy)
