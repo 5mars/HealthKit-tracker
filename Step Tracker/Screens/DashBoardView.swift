@@ -27,9 +27,10 @@ enum HealthMetricContext: CaseIterable, Identifiable {
 struct DashBoardView: View {
     
     @Environment(HealthKitManager.self) private var hkManager
-    @AppStorage("hasSeenPermissionPriming") private var hasSeenPermissionPriming = false
     @State private var isShowingPermissionPrimingSheet = false
     @State private var selectedStat: HealthMetricContext = .steps
+    @State private var isShowingAlert = false
+    @State private var fetchError: STError = .noData
 
     var isSteps: Bool {selectedStat == .steps}
 
@@ -57,21 +58,46 @@ struct DashBoardView: View {
             }
             .padding()
             .task {
-                await hkManager.fetchStepCount()
-                await hkManager.fetchWeights()
-                await hkManager.fetchWeightsDifferentials()
-//                await hkManager.addSimulatorData()
-                isShowingPermissionPrimingSheet = !hasSeenPermissionPriming
+                do {
+                    try await hkManager.fetchStepCount()
+                    try await hkManager.fetchWeights()
+                    try await hkManager.fetchWeightsDifferentials()
+                } catch STError.authNotDetermined {
+                    isShowingPermissionPrimingSheet = true
+                } catch STError.noData {
+                    fetchError = .noData
+                    isShowingAlert = true
+                } catch {
+                    fetchError = .unableToCompleteRequest
+                    isShowingAlert = true
+                }
             }
             .navigationTitle("Dashboard")
+            .toolbar {
+                ToolbarItem(placement: .topBarTrailing) {
+                    // Navigate to SettingsView
+                    NavigationLink {
+                        Settings()
+                    } label: {
+                        Image(systemName: "gearshape")
+                            .accessibilityLabel("Settings")
+                    }
+                }
+            }
             .navigationDestination(for: HealthMetricContext.self) { metric in
                 HealthDataListView(metric: metric)
             }
             .sheet(isPresented: $isShowingPermissionPrimingSheet, onDismiss: {
                 //fetch health data
             }, content: {
-                HKPermissionPrimmingView(hasSeen: $hasSeenPermissionPriming)
+                HKPermissionPrimmingView()
             })
+            .alert(isPresented: $isShowingAlert, error: fetchError) { fetchError in
+                // Action Button
+            } message: { fetchError in
+                Text(fetchError.failureReason)
+            }
+
         }
         .tint(isSteps ? .pink : .indigo)
     }
