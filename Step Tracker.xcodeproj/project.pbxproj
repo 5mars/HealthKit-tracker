@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		0D2625972BE4178C001FA906 /* StepBarChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2625962BE4178C001FA906 /* StepBarChart.swift */; };
-		0D26259D2BE41D42001FA906 /* ChartMath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D26259C2BE41D42001FA906 /* ChartMath.swift */; };
 		0D26259F2BE41D75001FA906 /* ChartDataTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D26259E2BE41D75001FA906 /* ChartDataTypes.swift */; };
 		0D2625A22BE41E11001FA906 /* Date+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2625A12BE41E11001FA906 /* Date+Ext.swift */; };
 		0D2625A52BE41FB9001FA906 /* Algorithms in Frameworks */ = {isa = PBXBuildFile; productRef = 0D2625A42BE41FB9001FA906 /* Algorithms */; };
@@ -35,7 +34,6 @@
 
 /* Begin PBXFileReference section */
 		0D2625962BE4178C001FA906 /* StepBarChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepBarChart.swift; sourceTree = "<group>"; };
-		0D26259C2BE41D42001FA906 /* ChartMath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartMath.swift; sourceTree = "<group>"; };
 		0D26259E2BE41D75001FA906 /* ChartDataTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartDataTypes.swift; sourceTree = "<group>"; };
 		0D2625A12BE41E11001FA906 /* Date+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Ext.swift"; sourceTree = "<group>"; };
 		0D2625A62BE424F7001FA906 /* StepPieChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepPieChart.swift; sourceTree = "<group>"; };
@@ -87,16 +85,9 @@
 		0D2625992BE41A50001FA906 /* Charts */ = {
 			isa = PBXGroup;
 			children = (
-				0D2625962BE4178C001FA906 /* StepBarChart.swift */,
-				0D2625A62BE424F7001FA906 /* StepPieChart.swift */,
-				0D8DBF012BFA6DC7003142E1 /* WeightLineChart.swift */,
-				0DFDFCED2C09193100D588CD /* WeightDiffChart.swift */,
-				0D26259C2BE41D42001FA906 /* ChartMath.swift */,
-				0D26259E2BE41D75001FA906 /* ChartDataTypes.swift */,
-				0D8622BE2C2CFA550069A3C7 /* ChartEmptyView.swift */,
-				0D94A6C12C3DB59A005801FD /* ChartContainer.swift */,
-				0D94A6C42C3DFBD5005801FD /* ChartHelper.swift */,
-				0D94A6C62C3E0A05005801FD /* ChartAnnotationView.swift */,
+				0D2AA8BC2C41EF5900F07BE4 /* Charts */,
+				0D2AA8BE2C41EF6E00F07BE4 /* Chart Custom Views */,
+				0D2AA8BD2C41EF6400F07BE4 /* Chart Utilities */,
 			);
 			path = Charts;
 			sourceTree = "<group>";
@@ -124,6 +115,36 @@
 				0D2AA8BA2C41EC6900F07BE4 /* Array+Ext.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		0D2AA8BC2C41EF5900F07BE4 /* Charts */ = {
+			isa = PBXGroup;
+			children = (
+				0D2625962BE4178C001FA906 /* StepBarChart.swift */,
+				0D2625A62BE424F7001FA906 /* StepPieChart.swift */,
+				0D8DBF012BFA6DC7003142E1 /* WeightLineChart.swift */,
+				0DFDFCED2C09193100D588CD /* WeightDiffChart.swift */,
+			);
+			path = Charts;
+			sourceTree = "<group>";
+		};
+		0D2AA8BD2C41EF6400F07BE4 /* Chart Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				0D26259E2BE41D75001FA906 /* ChartDataTypes.swift */,
+				0D94A6C42C3DFBD5005801FD /* ChartHelper.swift */,
+			);
+			path = "Chart Utilities";
+			sourceTree = "<group>";
+		};
+		0D2AA8BE2C41EF6E00F07BE4 /* Chart Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				0D8622BE2C2CFA550069A3C7 /* ChartEmptyView.swift */,
+				0D94A6C12C3DB59A005801FD /* ChartContainer.swift */,
+				0D94A6C62C3E0A05005801FD /* ChartAnnotationView.swift */,
+			);
+			path = "Chart Custom Views";
 			sourceTree = "<group>";
 		};
 		0D5DC44B2BE0907E0027E90C = {
@@ -266,7 +287,6 @@
 				0D4E97732BE162D200189491 /* HealthKitManager.swift in Sources */,
 				0D4E97702BE1599300189491 /* HKPermissionPrimmingView.swift in Sources */,
 				0DFDFCEE2C09193100D588CD /* WeightDiffChart.swift in Sources */,
-				0D26259D2BE41D42001FA906 /* ChartMath.swift in Sources */,
 				0D8622C12C2D91F80069A3C7 /* Settings.swift in Sources */,
 				0D4E97752BE2D84D00189491 /* HealthMetric.swift in Sources */,
 				0D26259F2BE41D75001FA906 /* ChartDataTypes.swift in Sources */,
