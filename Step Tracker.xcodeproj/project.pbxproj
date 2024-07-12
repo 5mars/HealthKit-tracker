@@ -28,6 +28,7 @@
 		0D94A6C22C3DB59A005801FD /* ChartContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D94A6C12C3DB59A005801FD /* ChartContainer.swift */; };
 		0D94A6C52C3DFBD5005801FD /* ChartHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D94A6C42C3DFBD5005801FD /* ChartHelper.swift */; };
 		0D94A6C72C3E0A05005801FD /* ChartAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D94A6C62C3E0A05005801FD /* ChartAnnotationView.swift */; };
+		0D94A6C92C4072BF005801FD /* STErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D94A6C82C4072BF005801FD /* STErrors.swift */; };
 		0DFDFCEE2C09193100D588CD /* WeightDiffChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DFDFCED2C09193100D588CD /* WeightDiffChart.swift */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +55,7 @@
 		0D94A6C12C3DB59A005801FD /* ChartContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartContainer.swift; sourceTree = "<group>"; };
 		0D94A6C42C3DFBD5005801FD /* ChartHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartHelper.swift; sourceTree = "<group>"; };
 		0D94A6C62C3E0A05005801FD /* ChartAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartAnnotationView.swift; sourceTree = "<group>"; };
+		0D94A6C82C4072BF005801FD /* STErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STErrors.swift; sourceTree = "<group>"; };
 		0DFDFCED2C09193100D588CD /* WeightDiffChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightDiffChart.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -166,6 +168,7 @@
 			children = (
 				0D2625A02BE41DF9001FA906 /* Extensions */,
 				0D8DBF042BFA72D9003142E1 /* MockData.swift */,
+				0D94A6C82C4072BF005801FD /* STErrors.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -255,6 +258,7 @@
 				0D8DBF052BFA72D9003142E1 /* MockData.swift in Sources */,
 				0D5DC4582BE0907F0027E90C /* Step_TrackerApp.swift in Sources */,
 				0D8622BF2C2CFA550069A3C7 /* ChartEmptyView.swift in Sources */,
+				0D94A6C92C4072BF005801FD /* STErrors.swift in Sources */,
 				0D4E97732BE162D200189491 /* HealthKitManager.swift in Sources */,
 				0D4E97702BE1599300189491 /* HKPermissionPrimmingView.swift in Sources */,
 				0DFDFCEE2C09193100D588CD /* WeightDiffChart.swift in Sources */,
