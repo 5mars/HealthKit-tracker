@@ -47,7 +47,6 @@ struct HKPermissionPrimmingView: View {
             .shadow(color: .gray.opacity(0.3), radius: 10)
         }
         .padding(30)
-        .interactiveDismissDisabled()
         .healthDataAccessRequest(store: hkManager.store,
                                  shareTypes: hkManager.types,
                                  readTypes: hkManager.types,

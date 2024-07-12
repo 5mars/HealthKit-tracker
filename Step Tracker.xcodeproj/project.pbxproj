@@ -13,6 +13,7 @@
 		0D2625A22BE41E11001FA906 /* Date+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2625A12BE41E11001FA906 /* Date+Ext.swift */; };
 		0D2625A52BE41FB9001FA906 /* Algorithms in Frameworks */ = {isa = PBXBuildFile; productRef = 0D2625A42BE41FB9001FA906 /* Algorithms */; };
 		0D2625A72BE424F7001FA906 /* StepPieChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2625A62BE424F7001FA906 /* StepPieChart.swift */; };
+		0D2AA8BB2C41EC6900F07BE4 /* Array+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2AA8BA2C41EC6900F07BE4 /* Array+Ext.swift */; };
 		0D4E976E2BE14A6300189491 /* HealthDataListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4E976D2BE14A6300189491 /* HealthDataListView.swift */; };
 		0D4E97702BE1599300189491 /* HKPermissionPrimmingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4E976F2BE1599300189491 /* HKPermissionPrimmingView.swift */; };
 		0D4E97732BE162D200189491 /* HealthKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4E97722BE162D100189491 /* HealthKitManager.swift */; };
@@ -38,6 +39,7 @@
 		0D26259E2BE41D75001FA906 /* ChartDataTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartDataTypes.swift; sourceTree = "<group>"; };
 		0D2625A12BE41E11001FA906 /* Date+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Ext.swift"; sourceTree = "<group>"; };
 		0D2625A62BE424F7001FA906 /* StepPieChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepPieChart.swift; sourceTree = "<group>"; };
+		0D2AA8BA2C41EC6900F07BE4 /* Array+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Ext.swift"; sourceTree = "<group>"; };
 		0D4E976D2BE14A6300189491 /* HealthDataListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthDataListView.swift; sourceTree = "<group>"; };
 		0D4E976F2BE1599300189491 /* HKPermissionPrimmingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HKPermissionPrimmingView.swift; sourceTree = "<group>"; };
 		0D4E97712BE1610300189491 /* Step Tracker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Step Tracker.entitlements"; sourceTree = "<group>"; };
@@ -86,11 +88,11 @@
 			isa = PBXGroup;
 			children = (
 				0D2625962BE4178C001FA906 /* StepBarChart.swift */,
-				0D26259C2BE41D42001FA906 /* ChartMath.swift */,
-				0D26259E2BE41D75001FA906 /* ChartDataTypes.swift */,
 				0D2625A62BE424F7001FA906 /* StepPieChart.swift */,
 				0D8DBF012BFA6DC7003142E1 /* WeightLineChart.swift */,
 				0DFDFCED2C09193100D588CD /* WeightDiffChart.swift */,
+				0D26259C2BE41D42001FA906 /* ChartMath.swift */,
+				0D26259E2BE41D75001FA906 /* ChartDataTypes.swift */,
 				0D8622BE2C2CFA550069A3C7 /* ChartEmptyView.swift */,
 				0D94A6C12C3DB59A005801FD /* ChartContainer.swift */,
 				0D94A6C42C3DFBD5005801FD /* ChartHelper.swift */,
@@ -119,6 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				0D2625A12BE41E11001FA906 /* Date+Ext.swift */,
+				0D2AA8BA2C41EC6900F07BE4 /* Array+Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -249,6 +252,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D2AA8BB2C41EC6900F07BE4 /* Array+Ext.swift in Sources */,
 				0D4E976E2BE14A6300189491 /* HealthDataListView.swift in Sources */,
 				0D5DC45A2BE0907F0027E90C /* DashBoardView.swift in Sources */,
 				0D94A6C52C3DFBD5005801FD /* ChartHelper.swift in Sources */,

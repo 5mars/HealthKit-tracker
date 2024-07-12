@@ -21,17 +21,20 @@ struct WeightLineChart: View {
     var minValue: Double {
         chartData.map { $0.value }.min() ?? 0
     }
+    
+    
+    var subtitle: String {
+        let average = chartData.map { $0.value }.average
+        return "Avg: \(average.formatted(.number.precision(.fractionLength(1))))"
+    }
 
     var body: some View {
         let config = ChartContainerConfiguration(title: "Weight", 
                                                  symbol: "figure",
-                                                 subtitle: "Avg: too fat",
+                                                 subtitle: subtitle,
                                                  context: .weight,
                                                  isNav: true)
         ChartContainer(config: config) {
-            if chartData.isEmpty {
-                ChartEmptyView(systemImageName: "chart.xyaxis.line", title: "No Data", description: "There is no weight data from the Health App")
-            } else {
                 Chart {
                     if let selectedData {
                         ChartAnnotationView(data: selectedData, context: .weight)
@@ -72,6 +75,10 @@ struct WeightLineChart: View {
                         AxisValueLabel()
                     }
                 }
+                .overlay {
+                    if chartData.isEmpty {                    
+                        ChartEmptyView(systemImageName: "chart.xyaxis.line", title: "No Data", description: "There is no weight data from the Health App")
+                    }
             }
         }
         .sensoryFeedback(.selection, trigger: selectedDay)
