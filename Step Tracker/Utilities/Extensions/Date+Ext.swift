@@ -15,4 +15,8 @@ extension Date {
     var weekDayTitle: String {
         self.formatted(.dateTime.weekday(.wide))
     }
+    
+    var accessibilityDate: String {
+        self.formatted(.dateTime.month(.wide).day())
+    }
 }

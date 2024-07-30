@@ -33,14 +33,19 @@ struct StepBarChart: View {
                     RuleMark(y: .value("Avegare", averageSteps))
                         .foregroundStyle(Color.secondary)
                         .lineStyle(.init(lineWidth: 1, dash: [5]))
+                        .accessibilityHidden(true)
                 }
                 
                 ForEach(chartData) { steps in
-                    BarMark(x: .value("Date", steps.date, unit: .day),
-                            y: .value("Steps", steps.value)
-                    )
-                    .foregroundStyle(Color.pink.gradient)
-                    .opacity(rawSelectedDate == nil || steps.date == selectedData?.date ? 1.0 : 0.3)
+                    Plot {
+                        BarMark(x: .value("Date", steps.date, unit: .day),
+                                y: .value("Steps", steps.value)
+                        )
+                        .foregroundStyle(Color.pink.gradient)
+                        .opacity(rawSelectedDate == nil || steps.date == selectedData?.date ? 1.0 : 0.3)
+                    }
+                    .accessibilityLabel(steps.date.accessibilityDate)
+                    .accessibilityValue("\(Int(steps.value)) step")
                 }
             }
             .frame(height: 150)
