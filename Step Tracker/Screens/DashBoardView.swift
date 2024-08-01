@@ -9,7 +9,7 @@ import SwiftUI
 import Charts
 
 enum HealthMetricContext: CaseIterable, Identifiable {
-    // could add another case if you want to track something else like calories, or sleep
+    // Could add another case if you want to track something else like calories, or sleep
     case steps, weight
     var id: Self { self }
     
