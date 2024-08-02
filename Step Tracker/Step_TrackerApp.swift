@@ -10,10 +10,12 @@ import SwiftUI
 @main
 struct Step_TrackerApp: App {
     let hkManager = HealthKitManager()
+    @AppStorage("isDarkMode") private var isDarkMode: Bool = true
     var body: some Scene {
         WindowGroup {
             DashBoardView()
                 .environment(hkManager)
+                .preferredColorScheme(isDarkMode ? .dark : .light)
         }
     }
 }
